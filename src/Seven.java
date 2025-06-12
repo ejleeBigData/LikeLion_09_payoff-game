@@ -11,6 +11,7 @@ public class Seven implements Player {
     @Override
     public boolean cooperate(int round) {
 
+        //Prober 에 10회만 배신
         // 1–4라운드: D, C, C, C
         if (round == 1 || round == 10)    return false;
         if (round >= 2 && round <= 4) return true;

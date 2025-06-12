@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         int rounds = 10; // 라운드 수 고정
 
-        Player playerA = new A(rounds);
+        Player playerA = new TitForTat(rounds);
         Player playerB = new Seven(rounds);
         //Player playerB = new TitForNTats(rounds, 2);
         //Player playerB = new SuspiciousTitForTat(rounds);
