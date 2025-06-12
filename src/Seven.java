@@ -11,7 +11,7 @@ public class Seven implements Player {
     @Override
     public boolean cooperate(int round) {
 
-        // 1–4라운드: D, C, C, C , Prober 에 10번째 배신
+        // 1–4라운드: D, C, C, C
         if (round == 1 || round == 10)    return false;
         if (round >= 2 && round <= 4) return true;
 
@@ -26,7 +26,6 @@ public class Seven implements Player {
         }
         // 그 외에는 Tit‑for‑Tat
         return opponentHistory[round - 2];
-
     }
 
     @Override
